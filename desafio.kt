@@ -16,6 +16,17 @@ data class Formacao(val nome: String, var conteudos: List<ConteudoEducacional>) 
 }
 
 fun main() {
+    val nivel = Nivel.BASICO
+    val message = when (nivel) {
+        Nivel.BASICO -> "It´s Basico"
+        Nivel.INTERMEDIARIO -> "It´s Intermediario"
+        Nivel.DIFICIL -> "It´s Dificil"
+    }
+    println(message)
+}
+/*
+{
     TODO("Analise as classes modeladas para este domínio de aplicação e pense em formas de evoluí-las.")
     TODO("Simule alguns cenários de teste. Para isso, crie alguns objetos usando as classes em questão.")
 }
+*/
