@@ -52,7 +52,7 @@ data class Formacao(val nome: String, var conteudos: List<ConteudoEducacional>) 
     val message = when (nivel) {
         Nivel.BASICO -> "It´s Basico"
         Nivel.INTERMEDIARIO -> "It´s Intermediario"
-        Nivel.DIFICIL -> "It´s Dificil"
+        Nivel.AVANCADO -> "It´s Dificil"
     }
     println(message)
 }
