@@ -1,60 +1,32 @@
 // [Template no Kotlin Playground](https://pl.kotl.in/WcteahpyN)
 
-enum class Nivel { BASICO, INTERMEDIARIO, *AVANCADO } // * para identificar e separara os alunos dentro dos respectivos Níveis
+enum class Nivel { BASICO, INTERMEDIARIO, AVANCADO } // * para identificar e separar os alunos dentro dos respectivos Níveis
 
-*fun nivel = Nivel()
+class Usuario ( var aluno: String, var idade: Int, var sexo: String )
 
-class Usuario
-  
-    *fun usuario = Usuario()
-  )
-  var aluno: String
-  var idade: Int
-  var sexo: String
-  var nivel: String
-  var conteudoEducacional, String
- )
+data class ConteudoEducacional(var nome: String, val duracao: Int = 60)
 
-/*data*/ class ConteudoEducacional(var nome: String, val duracao: Int = 60)
+var conteudoEducacional = listOf<ConteudoEducacional> ( 
+    "Java", 50
+    "Kotlin", 45
+    "SQL", 25
+    "PHP", 20
+    "Python", 40
+    )
+// lista dos cursos (conteúdos) disponíveis.
 
-*fun conteudoEducacional = ConteudoEducacional()
-*val conteudoEducacional(
-    Java, 50
-    Kotlin, 45
-    SQL, 25
-    PHP, 20
-    Python, 40
-) // lista dos cursos disponíveis.
-
-data class Formacao(val nome: String, var conteudos: List<ConteudoEducacional>) {
+data class Formacao(val nome: String, val nivel: Nivel(), var conteudos: List<ConteudoEducacional>) {
 	
-    *when ConteudoEducacional(
-    Java -> )
-    
+  
     
     val inscritos = mutableListOf<Usuario>()
-    
-    *inscritos.addAll(ListOf(Paulo, João, Maria)) // (https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/mutable-list-of.html)
-       
+        
     fun matricular(usuario: Usuario) {
         TODO("Utilize o parâmetro $usuario para simular uma matrícula (usar a lista de $inscritos).")
-   
-    *fun usuario = Usuario()
-        *val usuario (
-        Paulo, 35, M, BASICO
-        João, 28, M, INTERMEDIARIO
-        Maria, 29, F, AVANCADO
-    )
-}
-
-*fun main() {
-    val nivel = Nivel.BASICO
-    val message = when (nivel) {
-        Nivel.BASICO -> "It´s Basico"
-        Nivel.INTERMEDIARIO -> "It´s Intermediario"
-        Nivel.AVANCADO -> "It´s Dificil"
+      inscritos.addAll("João", 28, "M"; "Maria", 35, "F"; "Elder", 16, "M", "Lisa", 21, "F")) // (https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/mutable-list-of.html)
     }
-    println(message)
+
+    
 }
 /*
 {
